@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | LA Tunechi Entertainment</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
     <div class="container">
@@ -13,10 +14,14 @@
             <p>Your premier partner for cinematic storytelling, event coverage, and more.</p>
         </header>
 
-        <div class="nav">
+        <nav class="nav">
             <a href="{% url 'about' %}">About</a> | 
             <a href="{% url 'contact' %}">Contact</a>
-        </div>
+            <a href="{% url 'projects' %}">Projects</a> |
+            <a href="{% url 'gallery' %}">Gallery</a> |
+            <a href="{% url 'contact' %}">Contact</a> |
+	    <a href="{% url 'contact_form' %}">ContactForm<a/>
+	</nav>
 
         <section class="intro">
             <h2>Our Services</h2>
