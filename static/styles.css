@@ -1,33 +1,153 @@
-body {
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Body and general text styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 0;
     text-align: center;
 }
 
-.container {
-    max-width: 800px;
-}
-
-h1 {
+header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
-.highlight {
-    color: #f39c12;
-    font-weight: bold;
+header p {
+    font-size: 1.2rem;
 }
 
-.tagline {
+/* Navigation bar */
+.nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1a1a1a;
     font-size: 1.2rem;
-    font-style: italic;
-    color: #cccccc;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #ff5a5f;
+    color: white;
+}
+
+/* Section Styling */
+section {
+    margin-top: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+ul li::before {
+    content: '✔';
+    margin-right: 10px;
+    color: #ff5a5f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .nav a {
+        font-size: 1rem;
+        margin: 0 8px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, ul li {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
 
