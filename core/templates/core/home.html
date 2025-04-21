@@ -9,11 +9,14 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="site-header">
+	    <div class="logo-container">
+		<img src="{{ url_for('static', filename='logo.png') }}" alt="LA Tunechi Entertainment Logo" class="logo">
+	    </div>
             <h1>Welcome to LA Tunechi Entertainment</h1>
             <p>Your premier partner for cinematic storytelling, event coverage, and more.</p>
         </header>
-
+	
         <nav class="nav">
             <a href="{% url 'about' %}">About</a> | 
             <a href="{% url 'contact' %}">Contact</a>
