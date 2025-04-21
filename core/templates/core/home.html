@@ -3,13 +3,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LA Tunechi Entertainment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | LA Tunechi Entertainment</title>
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
     <div class="container">
-    	<h1>Welcome to LA Tunechi Entertainment</h1>
-    	<p>We capture timeless stories, visuals that breathe, and moments that matter.</p>
+        <header>
+            <h1>Welcome to LA Tunechi Entertainment</h1>
+            <p>Your premier partner for cinematic storytelling, event coverage, and more.</p>
+        </header>
+
+        <div class="nav">
+            <a href="{% url 'about' %}">About</a> | 
+            <a href="{% url 'contact' %}">Contact</a>
+        </div>
+
+        <section class="intro">
+            <h2>Our Services</h2>
+            <p>At LA Tunechi Entertainment, we offer a variety of services including:</p>
+            <ul>
+                <li>Cinematic Video Production</li>
+                <li>Event Coverage</li>
+                <li>Photography Services</li>
+                <li>Creative Storytelling</li>
+                <li>Visual Content Creation for Social Media</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 LA Tunechi Entertainment. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
 
