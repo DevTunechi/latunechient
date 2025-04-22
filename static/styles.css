@@ -8,8 +8,8 @@
 /* Body and general text styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212; /* Very dark gray */
+    color: #ffffff; /* White text */
     line-height: 1.6;
     padding: 20px;
 }
@@ -23,8 +23,8 @@ body {
 
 /* Header styling */
 header {
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #1db954; /* Luxurious Green */
+    color: #000000; /* Black text for contrast */
     padding: 40px 0;
     text-align: center;
 }
@@ -36,6 +36,7 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
+    color: #000000;
 }
 
 /* Navigation bar */
@@ -46,16 +47,18 @@ header p {
 
 .nav a {
     text-decoration: none;
-    color: #1a1a1a;
+    color: #ffffff; /* White text on dark background */
     font-size: 1.2rem;
     margin: 0 15px;
     padding: 5px 10px;
     border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
 }
 
 .nav a:hover {
-    background-color: #ff5a5f;
-    color: white;
+    background-color: #1db954; /* Green on hover */
+    color: #000000; /* Black text on green */
 }
 
 /* Section Styling */
@@ -66,13 +69,13 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #1db954; /* Green accent for headings */
 }
 
 section p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: #dddddd;
 }
 
 ul {
@@ -83,13 +86,13 @@ ul {
 ul li {
     margin: 10px 0;
     font-size: 1rem;
-    color: #444;
+    color: #cccccc;
 }
 
 ul li::before {
     content: '✔';
     margin-right: 10px;
-    color: #ff5a5f;
+    color: #1db954; /* Green check */
 }
 
 /* Footer */
@@ -119,7 +122,8 @@ footer {
         font-size: 1.8rem;
     }
 
-    section p, ul li {
+    section p,
+    ul li {
         font-size: 1rem;
     }
 }
@@ -142,19 +146,22 @@ footer {
         font-size: 1.5rem;
     }
 
-    section p, ul li {
+    section p,
+    ul li {
         font-size: 0.9rem;
     }
 
     footer {
         font-size: 0.8rem;
     }
+}
 
+/* Site Header */
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #222;
+    background-color: #000000;
     padding: 10px 30px;
 }
 
@@ -169,17 +176,19 @@ footer {
 }
 
 .navbar ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
 }
 
 .navbar ul li a:hover {
-    background-color: #555;
+    background-color: #1db954;
+    color: #000;
     border-radius: 4px;
 }
 
+/* Video container */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -188,7 +197,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 255, 128, 0.15); /* subtle green glow */
 }
 
 .video-container iframe {
